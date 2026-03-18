@@ -1,5 +1,6 @@
 // Imports go first
 import { makePottery } from "./PotteryWheel.js";
+import { firePottery } from "./Kiln.js";
 
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery("Mug", 2, 4);
@@ -9,8 +10,13 @@ let teapot = makePottery("Teapot", 4, 5);
 let vase = makePottery("Vase", 5, 6);
 
 console.log(mug, bowl, plate, teapot, vase);
-// Fire each piece of pottery in the kiln
 
+// Fire each piece of pottery in the kiln
+console.log(firePottery(mug, 2000));
+console.log(firePottery(bowl, 2100));
+console.log(firePottery(plate, 2200));
+console.log(firePottery(teapot, 2000));
+console.log(firePottery(vase, 2400));
 // Determine which ones should be sold, and their price
 
 // Invoke the component function that renders the HTML list
