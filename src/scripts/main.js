@@ -1,7 +1,7 @@
 // Imports go first
 import { makePottery } from "./PotteryWheel.js";
 import { firePottery } from "./Kiln.js";
-import { toSellOrNotToSell } from "./PotteryCatalog.js";
+import { toSellOrNotToSell, usePottery } from "./PotteryCatalog.js";
 
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery("Mug", 2, 4);

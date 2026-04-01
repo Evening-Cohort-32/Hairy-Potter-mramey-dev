@@ -91,10 +91,10 @@ Your next task is to create HTML representations of the pottery you want to sell
 
 #### Create Pottery HTML
 
-1. Create a `scripts/PotteryList.js` module.
-1. Define and export a `PotteryList` function.
-1. The `PotteryList` function must get the items to be sold from the `PotteryCatalog.js` module.
-1. The `PotteryList` function must convert each object in the array to an HTML representation string. Use the following template to generate the representations.
+1. Create a `scripts/PotteryList.js` module. <!-- COMPLETE >
+1. Define and export a `PotteryList` function. <!-- COMPLETE >
+1. The `PotteryList` function must get the items to be sold from the `PotteryCatalog.js` module. <!-- COMPLETE >
+1. The `PotteryList` function must convert each object in the array to an HTML representation string. Use the following template to generate the representations. <!-- COMPLETE >
    ```html
    <section class="pottery" id="pottery--1">
      <h2 class="pottery__shape">Mug</h2>
@@ -104,7 +104,7 @@ Your next task is to create HTML representations of the pottery you want to sell
      <div class="pottery__price">Price is $20</div>
    </section>
    ```
-1. The `PotteryList` function must then return a single string that contains ALL of the pottery HTML representation.
+1. The `PotteryList` function must then return a single string that contains ALL of the pottery HTML representation. <!-- COMPLETE >
 
 #### Checking Your Work
 
