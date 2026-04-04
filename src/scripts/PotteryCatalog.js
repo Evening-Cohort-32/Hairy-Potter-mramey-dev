@@ -1,17 +1,17 @@
-const availablePots = [];
+const potteryToSell = [];
 
 export const toSellOrNotToSell = (potteryObject) => {
-  if (potteryObject.cracked === false) {
+  if (!potteryObject.cracked) {
     if (potteryObject.weight >= 6) {
       potteryObject.price = 40;
-    } else if (potteryObject.weight < 6) {
+    } else {
       potteryObject.price = 20;
     }
-    availablePots.push(potteryObject);
+    potteryToSell.push(potteryObject);
   }
   return potteryObject;
 };
 
 export const usePottery = () => {
-  structuredClone(availablePots);
+  structuredClone(potteryToSell);
 };
