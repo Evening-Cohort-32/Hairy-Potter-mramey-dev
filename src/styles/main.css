@@ -17,3 +17,65 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
+
+body {
+    margin: 0;
+    padding: 2rem;
+    background-color: #f7f4ef;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Pottery List Container */
+.potteryList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Individual Pottery Card */
+.pottery {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.pottery:hover {
+    transform: translateY(-5px);
+}
+
+/* Text Styling */
+.pottery__shape {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.pottery__properties {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.pottery__price {
+    font-weight: bold;
+    color: #2a7f62;
+}
+.pottery__image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}

@@ -119,12 +119,12 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > Each module plays a specific role in transforming data so that it can be displayed in the browser. This project does not operate from a database, and the data is initially created in the main.js module as arguments passed through functions. The other modules then package the data by transforming it into objects, adding properties, and formatting it into HMTL. In main.js the returned HTML is assigned to the innerHTML of the <article> element in the DOM, which renders the correct data in the browser.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/4c983d43312d424592c9f1c2b8a00a6b
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > All of the other code is organized into modules based on their functionality. Organizing code into separate modules allows other developers to make sense of the code quickly and efficiently.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > I would need to adjust the PotteryCatalog module because cracked pottery would no longer be excluded from the sale. To minimize customer confusion and ensure they don't mistakenly order cracked pottery, I would strategically ensure that these items appear in separate areas on the website. I could do that by creating two empty arrays in the PotteryCatalog Module (discountedPottery and fullPricedPottery for example). I would then update the toSellOrNotToSell function to push the object to the respective array based on the cracked status of the object, weight, and assign price based on those conditions. I would then need to export structured clones of each array and import them to the PotteryList module (where we generate HMTL). I would create a 2nd function to generate HTML for the cracked pottery, as users might need to view a disclaimer/comment or see detailed images of the faulty pottery (big picture, the card might need to look different or include additional info to the end user). I would then update the DOM with a section for "Discounted Pottery" that would display the cracked pots in their own section, away from the full priced pots.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/6fa340a83a994b749714ef3b1e81843f

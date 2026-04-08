@@ -13,5 +13,5 @@ export const toSellOrNotToSell = (potteryObject) => {
 };
 
 export const usePottery = () => {
-  structuredClone(potteryToSell);
+  return structuredClone(potteryToSell);
 };
